@@ -1,0 +1,510 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+p {
+    font-size: 18px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+body,
+html,
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+body{
+    max-width: 1200px;
+    margin: auto;
+}
+
+header {
+    background-color: #fff;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 90vh;
+}
+
+main {
+    margin-left: 21%;
+    padding-left: 14%;
+    padding-right: 8%;
+}
+
+footer {
+    height: 80vh;
+    margin-left: 21%;
+    padding-left: 14%;
+
+}
+
+#menu {
+    width: 100px;
+}
+
+.hero {
+    background-image: linear-gradient(to right, rgba(127, 0, 255, 1), rgba(255, 0, 255, 1)),
+        url("../images/hero.jpg");
+    height: 90%;
+    border-radius: 0 0 0 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* The hero image */
+.hero-image {
+    width: 80%;
+    margin-left: 150px;
+}
+
+.hero-text {
+    color: white;
+}
+
+.hero-text h1 {
+    text-transform: uppercase;
+    font-size: 40px;
+    margin-bottom: 0px;
+}
+
+.hero-text h2 {
+    margin-bottom: 16px;
+}
+
+.hero-text p {
+    max-width: 50%;
+    margin-bottom: 16px;
+}
+
+#navbar {
+    padding: 16px;
+    width: 400px;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-inline-start: 30px;
+    line-height: 50px;
+}
+
+.logo {
+    width: 60px;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(127, 0, 255, 1);
+    color: #fff;
+    font-weight: bolder;
+    font-size: 24px;
+    border-radius: 50%;
+    margin-bottom: 50px;
+}
+
+.intro:hover {
+    background-color: lightblue;
+    border-radius: 60px;
+    max-width: 70px;
+    padding-left: 10px;
+    color: blue;
+}
+
+.reseau {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 24px;
+    height: 20px;
+    padding: 8px 50px;
+}
+
+.reseau p {
+    color: black
+}
+
+.reseau ul, .touch ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 10px;
+    margin-top: 0;
+
+}
+
+#about p {
+    max-width: 35%;
+}
+
+#about {
+    padding-bottom: 20px;
+}
+
+.me {
+    display: block;
+    justify-content: space-around;
+    align-items: center;
+    text-align: left;
+    width: 190px;
+    aspect-ratio: 1/1.25;
+    background-color: aliceblue;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-top: 20px;
+
+}
+
+.me-list {
+
+    line-height: 30px;
+}
+
+.me ul, .about-list {
+    padding-inline-start: 0px;
+}
+
+.about-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+#formulaire {
+    background-image: linear-gradient(to right, rgba(0, 27, 255, 1), rgba(127, 0, 255, 1)),
+        url("../images/hero.jpg");
+    height: 100%;
+    width: 100%;
+    border-radius: 75% 0 0 0;
+}
+input {
+    background-color: beige;
+    border: 1px;
+    border-radius: 25px;
+    text-align: justify;
+
+}
+
+#email, #nom {
+    height: 30px;
+    width: 250px;
+}
+
+#message {
+    height: 150px;
+    width: 520px;
+    margin-bottom: 30px;
+}
+#submit {
+    background-color: #FA4969;
+    color: #fff;
+    width: 242px;
+    height: 59px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 60px;
+}
+.post-container {
+    margin: 20px 0;
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 600px;
+
+}
+
+.touch {
+    /* display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-wrap: wrap; */
+    height: 100%;
+    width: 100%;
+    
+    position: relative; 
+}
+.touch-content{
+    position: absolute;
+    bottom: 5px ;
+    right: 10px;
+}
+.touch ul {
+    margin-top: 30px;
+}
+
+.touch p {
+    text-align: end;
+    color: grey;
+}
+.ligne{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.ligne-content {
+    position: absolute;
+    width: 90%;
+    height: 0px;
+    right: 16px;
+    bottom:25px;
+    border: 1px solid #6877FF;
+    
+}
+
+#content-section {
+
+    flex-grow: 1;
+}
+
+
+.cover-background {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: red;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(0%);
+    opacity: 1;
+    transition: all 0.25s ease-in-out;
+}
+
+.cover-background:hover {
+    opacity: 0.8;
+    filter: brightness(60%);
+    transform: scale(1.1);
+}
+
+#posts {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.post {
+    max-width: 325px;
+    width: 100%;
+    position: relative;
+    aspect-ratio: 5/3;
+    overflow: hidden;
+    border-radius: 12px;
+}
+.cover {
+    width: 100%;
+    aspect-ratio: 5/3;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.cover-background {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: red;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(0%);
+    opacity: 1;
+    transition: all 0.25s ease-in-out;
+}
+
+.cover-background:hover {
+    opacity: 0.8;
+    filter: brightness(60%);
+    transform: scale(1.1);
+}
+
+.overlay{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 16px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .2);
+}
+
+.post-title{
+    color: #fff;
+}
+
+button {
+    background-color: #4456FB;
+    color: #fff;
+    width: 170px;
+    aspect-ratio: 1/0.25;
+    text-align: center;
+    border-radius: 60px;
+    border-width: 0px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+@keyframes projectButtonAnimSlideInUp {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes projectButtonAnimSlideOutUp {
+    0% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
+    100%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+}
+
+.post-button{
+    position: absolute;
+    left: 16px;
+    bottom: 32px;
+    width: 225px;
+    height: 59px;
+    overflow: hidden;
+    /* transform: translateY(100px); */
+    /* opacity: 0; */
+    /* animation-name: projectButtonAnimSlideOutUp;
+    animation-duration: 0.25s; */
+}
+
+.post:hover .post-button{
+    /* animation-name: projectButtonAnimSlideInUp;
+    animation-duration: 0.25s; */
+    /* transform: translateY(0px); */
+    opacity: 1;
+}
+
+.progress{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 1;
+}
+
+.progress-bar{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    width: 0%;
+    background: #fff;
+
+}
+.text-content{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+@keyframes buttonProgressBar {
+    0%{
+        width: 0%;
+    }
+
+    100%{
+        width: 100%;
+    }
+}
+.post-button:hover .progress-bar{
+    width: 100%;
+    animation-name: buttonProgressBar;
+    animation-duration: .5s;
+}
+
+@keyframes buttonTextAnim {
+    0%{
+        color:#fff;
+    }
+
+    30%{
+        color: #4456FB;
+    }
+    
+    100%{
+        color: #4456FB;
+    }
+}
+
+.post-button:hover .text-content{
+    animation-name: buttonTextAnim;
+    animation-duration: .5s;
+    color: #4456FB;
+}
+@media screen and (max-width: 600px) {
+   .reseau{
+    height: auto;
+   }
+   .reseau ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 10px;
+    margin-top: 0;
+    max-width: 30px;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  
+  @media screen and (min-width: 600px) and (max-width: 880px) {
+    
+  
+}
+  @media screen and (min-width: 881px) and (max-width: 1280px) {
+    
+  }
+  
+  @media screen and (min-width: 1281px) {
+    
+  }
