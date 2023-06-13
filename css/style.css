@@ -2,6 +2,19 @@ html {
     height: 100%;
     width: 100%;
 }
+body, html, h1, h2, h3, p {
+    margin: 0;
+}
+
+body{
+    max-width: 1200px;
+    margin: auto;
+}
+
+h2 {
+    font-size: 30px;
+    padding-bottom: 30px;
+}
 
 p {
     font-size: 18px;
@@ -11,29 +24,12 @@ ul {
     list-style-type: none;
 }
 
-h2 {
-    font-size: 30px;
-}
-
-body,
-html,
-h1,
-h2,
-h3,
-p {
-    margin: 0;
-}
-body{
-    max-width: 1200px;
-    margin: auto;
-}
-
 header {
     background-color: #fff;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    height: 90vh;
+    
 }
 
 main {
@@ -43,7 +39,6 @@ main {
 }
 
 footer {
-    height: 80vh;
     margin-left: 21%;
     padding-left: 14%;
 
@@ -53,6 +48,9 @@ footer {
     width: 100px;
 }
 
+.menu-burger{
+    display: none;
+}
 .hero {
     background-image: linear-gradient(to right, rgba(127, 0, 255, 1), rgba(255, 0, 255, 1)),
         url("../images/hero.jpg");
@@ -61,6 +59,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 50px;
 
 }
 
@@ -84,7 +83,7 @@ footer {
     margin-bottom: 16px;
 }
 
-.hero-text p {
+.reseau-p, .hero-p {
     max-width: 50%;
     margin-bottom: 16px;
 }
@@ -117,7 +116,7 @@ footer {
     margin-bottom: 50px;
 }
 
-.intro:hover {
+#menu li:hover {
     background-color: lightblue;
     border-radius: 60px;
     max-width: 70px;
@@ -149,7 +148,7 @@ footer {
 }
 
 #about p {
-    max-width: 35%;
+    max-width: 50%;
 }
 
 #about {
@@ -164,7 +163,7 @@ footer {
     width: 190px;
     aspect-ratio: 1/1.25;
     background-color: aliceblue;
-    border-radius: 5px;
+    border-radius: 10px;
     padding-left: 20px;
     padding-top: 20px;
 
@@ -184,6 +183,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    gap: 1em;
 
 }
 
@@ -220,6 +220,7 @@ input {
     text-align: center;
     font-size: 18px;
     border-radius: 60px;
+    margin-bottom: 10px;
 }
 .post-container {
     margin: 20px 0;
@@ -237,18 +238,25 @@ input {
     flex-wrap: wrap; */
     height: 100%;
     width: 100%;
-    
-    position: relative; 
-}
-.touch-content{
-    position: absolute;
-    bottom: 5px ;
-    right: 10px;
-}
-.touch ul {
-    margin-top: 30px;
+  
 }
 
+.touch-content {
+    padding-right: 30px;
+}
+
+.touch ul {
+    margin-top: 20px;
+    max-width: 300px;
+    padding-left: 60%;
+    
+}
+
+.xl{
+    font-size: 1.5em;
+    line-height: .04167em;
+    vertical-align: -.125em;
+}
 .touch p {
     text-align: end;
     color: grey;
@@ -267,9 +275,12 @@ input {
     border: 1px solid #6877FF;
     
 }
+.ligne-under{
+    padding-right: 30px;
+}
 
 #content-section {
-
+    margin-bottom: 50px;
     flex-grow: 1;
 }
 
@@ -483,28 +494,193 @@ button {
     color: #4456FB;
 }
 @media screen and (max-width: 600px) {
-   .reseau{
+    header{
+        display: block;
+        position: relative;
+    }
+    .navbar-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 30px;
+        flex-direction: unset;
+        padding-inline-start: 0px; 
+        
+    }
+    
+    /* #menu{
+        display: none;
+    } */
+    .logo {
+       
+        margin-bottom: 50px;
+    }
+    .menu-burger{
+        display: flex;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        font-size: 30px;
+    }
+   .reseau, header{
     height: auto;
    }
+   .hero-image {
+    width: 100%;
+    margin-left: 30px;
+}
+.hero-text h1 {
+    font-size: 30px;
+}
+.hero-text p {
+    max-width: 80%;
+}
+.hero-text {
+    color: white;
+    padding-left: 20px;
+}
+.reseau{
+    padding: 8px 30px;
+    margin-bottom: 100px;
+   }
    .reseau ul{
-    display: flex;
+    display: grid;
+    grid-template-columns: 10px 10px 10px;
     justify-content: space-between;
-    align-items: flex-end;
-    gap: 10px;
-    margin-top: 0;
-    max-width: 30px;
-    flex-direction: column;
-    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5em 2em;
+    max-width: none;
+    
+  } 
+  .post-button {
+    width: 150px;
+    height: 30px;
+}
+  #about p {
+    max-width: none;
+}
+#submit{
+    width: 142px;
+    height: 40px;
+}
+
+.touch ul {
+    padding-left: 0;
+    gap: 6px;
+    max-width: none;
+}
+.xl{
+    font-size: 1.25em;
+    line-height: .04167em;
+    vertical-align: -.125em;
+}
+
+/* Sidenav menu */
+.sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: -250px;
+    background-color: #e8e8e8;
+    padding-top: 60px;
+    transition: left 0.5s ease;
   }
   
+  /* Sidenav menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #111;
+  }
+  
+  .sidenav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Active class */
+  .sidenav.active {
+    left: 0;
+  }
+  
+  /* Close btn */
+  .sidenav .close {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+  }  
+  .burger-icon span {
+    display: block;
+    width: 35px;
+    height: 5px;
+    margin: 6px 0;
+  }
+}
   @media screen and (min-width: 600px) and (max-width: 880px) {
-    
+    .hero-p, #about p {
+        max-width: 80%;
+    }
+    .reseau, header{
+        height: auto;
+       }
+       .reseau{
+        padding: 8px 20px;
+        margin-bottom: 100px;
+       }
+       .reseau ul{
+        display: grid;
+        grid-template-columns: 10px 10px 10px;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0.5em 2em;
+        max-width: none;
+        
+      }
+       
+      .touch ul {
+        padding-left: 50%;
+    }
+
   
 }
   @media screen and (min-width: 881px) and (max-width: 1280px) {
-    
+    footer{
+        height: 80vh;
+      }
+      header{
+        height: 90vh;
+      }
+      .reseau{
+        padding: 8px 30px;
+      }
+      .reseau-p{
+        max-width: 60%;
+        }
+        .reseau ul{
+            padding-inline-start: 0;
+        }
+      #about p, .hero-p{
+        max-width: 70%;
+      }
   }
   
   @media screen and (min-width: 1281px) {
-    
+    footer{
+        height: 80vh;
+      }
+      header{
+        height: 90vh;
+      }
   }
